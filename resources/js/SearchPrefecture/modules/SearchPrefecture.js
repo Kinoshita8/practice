@@ -7,11 +7,9 @@ export default class SearchPrefecture {
     }
 
     bind(){
-        // this.$searchWordText.addEventListener('keyup', ()=>{
-        //     console.log('あさに');
-        //     this.searchPrefecture();
-        // });
-        console.log('あさに');
+        this.$searchWordText.addEventListener('keyup', ()=>{
+            this.searchPrefecture();
+        });
     }
 
     searchPrefecture(){
@@ -24,7 +22,7 @@ export default class SearchPrefecture {
             const prefectureName = element.dataset.name;
             const phonetic = element.dataset.phonetic;
 
-            if(searchWord.charAt(0) === prefectureName.charAt(0) || searchWord.charAt(0 === phonetic.charAt(0))){
+            if(searchWord.charAt(0) === prefectureName.charAt(0) || searchWord.charAt(0) === phonetic.charAt(0)){
                 element.classList.remove('hide');
             }else{
                 element.classList.add('hide');

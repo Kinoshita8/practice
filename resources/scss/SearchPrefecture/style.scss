@@ -1,3 +1,32 @@
+body{
+    max-width: 600px;
+    border: 1px solid #dddddd;
+    padding: 30px;
+}
+
+header{
+    background-color: #008080;
+    color: #fff;
+    font-size: 20px;
+    padding: 15px;
+}
+
+#search-word-input{
+    width: 2em;
+    padding: 5px;
+}
+
+#prefecture-list{
+    margin-top: 20px;
+    button{
+        background-color: #ffffe0;
+        padding: 5px;
+        min-width: 60px;
+        border: 1px solid #dddddd;
+        margin-bottom: 10px;
+    }
+}
+
 .hide{
     display: none;
 }
